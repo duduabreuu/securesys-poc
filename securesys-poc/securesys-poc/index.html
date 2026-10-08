@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#005864" />
+  <title>SecureSys — PoC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="recording-stage">
+    <div class="stage-copy">
+      <span class="eyebrow">POC INTERATIVA</span>
+      <h1>SecureSys</h1>
+      <p>Proteção inteligente contra golpes digitais.</p>
+      <span class="recording-hint">Clique no app para iniciar a demonstração</span>
+    </div>
+
+    <section class="phone" aria-label="Protótipo do aplicativo SecureSys">
+      <div class="phone-speaker"></div>
+      <div class="phone-screen" id="app">
+        <div class="status-bar"><span id="clock">7:48</span><span>▮▮▮  ◔  ▰</span></div>
+        <div class="screen-layer is-active" data-screen="splash"></div>
+        <div class="screen-layer" data-screen="loading"></div>
+        <div class="screen-layer" data-screen="login"></div>
+        <div class="screen-layer" data-screen="home"></div>
+        <div class="screen-layer" data-screen="result"></div>
+        <div class="screen-layer" data-screen="profile"></div>
+        <div class="screen-layer" data-screen="history"></div>
+        <div class="screen-layer" data-screen="learn"></div>
+        <div class="screen-layer" data-screen="security"></div>
+        <div class="toast" id="toast" role="status"></div>
+      </div>
+      <div class="phone-home-indicator"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
